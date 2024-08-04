@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仪表板 - 虚拟货币投资系统</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>欢迎回来, <span id="customerName"></span></h1>
+      <button onclick="logout()">登出</button>
+    </header>
+    <main>
+      <section class="account-info">
+        <h2>账户信息</h2>
+        <p>账户余额: <span id="accountBalance"></span></p>
+        <p>总投资: <span id="totalInvestment"></span></p>
+        <a href="fixed-investment.html">固定投资</a>
+      </section>
+      <section class="investment-chart">
+        <h2>投资表现</h2>
+        <canvas id="investmentChart"></canvas>
+      </section>
+      <section class="crypto-list">
+        <h2>虚拟货币列表</h2>
+        <ul id="cryptoList"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

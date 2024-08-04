@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>固定投资 - 虚拟货币投资系统</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fixed-investment.css">
+</head>
+
+<body>
+  <header>
+    <h1>固定投资产品</h1>
+    <nav>
+      <a href="dashboard.html">返回仪表板</a>
+      <button onclick="logout()">登出</button>
+    </nav>
+  </header>
+  <main>
+    <section class="product-info">
+      <h2>15% 年化收益率</h2>
+      <p>安全、稳定的投资选择，让您的资金增值无忧。</p>
+      <ul>
+        <li>最低投资额: $1,000</li>
+        <li>投资期限: 12个月</li>
+        <li>每月付息，到期还本</li>
+        <li>无提前退出费用</li>
+      </ul>
+    </section>
+    <section class="investment-form">
+      <h2>开始投资</h2>
+      <form id="fixedInvestmentForm">
+        <label for="investmentAmount">投资金额 ($):</label>
+        <input type="number" id="investmentAmount" name="investmentAmount" min="1000" required>
+        <button type="submit">确认投资</button>
+      </form>
+    </section>
+    <section class="investment-calculator">
+      <h2>收益计算器</h2>
+      <div id="calculatorResults">
+        <p>年收益: $<span id="yearlyReturn">0</span></p>
+        <p>月收益: $<span id="monthlyReturn">0</span></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/fixed-investment.js"></script>
+</body>
+
+</html>
